@@ -1,8 +1,7 @@
 package ch01;
 
 import java.util.Objects;
-
-public class Franc {
+class Franc{
     private final int amount;
 
     public Franc(int amount) {

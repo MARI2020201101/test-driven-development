@@ -2,9 +2,8 @@ package ch01;
 
 import java.util.Objects;
 
-public class Dollar {
+ class Dollar{
     private final int amount;
-
     public Dollar(int amount) {
         this.amount = amount;
     }
