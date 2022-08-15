@@ -6,11 +6,16 @@ class Sum implements Expression{
 
     public Sum(Money augend, Money addend) {
         this.augend = augend;
-        this.addend =addend;
+        this.addend = addend;
     }
 
     @Override
     public int amount() {
         return augend.amount() + addend.amount();
+    }
+
+    public Money reduce(String to) {
+        int amount = augend.amount + addend.amount;
+        return new Money(amount, to);
     }
 }

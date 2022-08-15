@@ -5,7 +5,7 @@ package ch11;
 import java.util.Objects;
 
 class Money implements Expression{
-    private final int amount;
+    public int amount;
     private final String currency;
     String currency() {
         return currency;
@@ -51,5 +51,10 @@ class Money implements Expression{
     @Override
     public int amount() {
         return amount;
+    }
+
+    @Override
+    public Money reduce(String to) {
+        return this;
     }
 }
